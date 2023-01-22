@@ -1,15 +1,8 @@
 import React from "react";
-import picture from "./assets/aiony-haust.jpg";
-import Main from "./MainContent";
-import Footer from "./Footer";
-import "./app.css";
+import Card from "./card.jsx";
+import data from "./data.jsx";
 
 export default function App() {
-  return (
-    <div className="wrapper">
-      <img className="portrait" src={picture} />
-      <Main />
-      <Footer />
-    </div>
-  );
+  const cards = data.map((data) => <Card item={data} />);
+  return <div>{cards}</div>;
 }

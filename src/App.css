@@ -1,0 +1,10 @@
+img {
+  max-width: 128px;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.container--flex {
+  display: flex;
+}

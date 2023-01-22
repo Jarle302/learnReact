@@ -1,13 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import Nav from "./Navbar";
-import Main from "./MainComp";
+import picture from "./assets/aiony-haust.jpg";
+import Main from "./MainContent";
+import Footer from "./Footer";
+import "./app.css";
 
-export function App() {
+export default function App() {
   return (
-    <div>
-      <Nav />
+    <div className="wrapper">
+      <img className="portrait" src={picture} />
       <Main />
+      <Footer />
     </div>
   );
 }
